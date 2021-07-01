@@ -14,4 +14,4 @@ COPY . .
 
 RUN wget https://github.com/tsl0922/ttyd/releases/download/1.6.3/ttyd.x86_64
 RUN chmod +x ttyd.x86_64
-CMD ./ttyd.x86_64 -p $PORT bash
+CMD ./ttyd.x86_64 -p $PORT -c admin:admin bash 
